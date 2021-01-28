@@ -1,4 +1,4 @@
-# ALG test project
+# ALG WEB.API test project
 
 # System Requirements
 
