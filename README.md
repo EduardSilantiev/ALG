@@ -1,5 +1,27 @@
 # ALG WEB.API test project
 
+# Coding task:
+Develop an ASP.Net Core API for managing promo codes.
+Please use this layout as a reference
+https://www.figma.com/file/6J7oriX3K4zPLF2lrhfIvJ/front-end-test-prototype
+
+API should support the following functionality:
+
+● Ability to search services by name 
+
+● Ability to Activate bonus for a Service for the current user
+
+● Infinite scroll for the Services list
+
+● An API user should be authorized.
+
+● Store data in any relational database, use EF Core to access data.
+
+● Use tests in your project.
+
+● The project should include a README.md with instructions on how to run it locally.
+
+
 # System Requirements
 
 1. .Net SDK 3.1.402 should be installed
