@@ -47,8 +47,24 @@ To stop the application, press Ctrl+C
 The application will be built and started. Then it can be accessed in a Browser by the address:
 https://localhost:44315/index.html
 
-When the App starts for the first time it creates an ALG database in MSSQL server (if not created) and seeds the database with a test data.
-It you want to use another database name, please change the connection string in an appsettings.json file.
+*When the App starts for the first time it creates an ALG database in MSSQL server (if not created) and seeds the database with a test data.
+If you want to use another database name, please change the connection string in an appsettings.json file.*
+
+*Three users are created by default:*
+
+*Email: john.dow@gmail.com*
+*Password: 111*
+
+*Email: adell.sansone@gmail.com*
+*Password: 222*
+
+*Email: gordon.brundage@gmail.com*
+*Password: 333*
+
+*Seven services are created by default:*
+*Sitecostructor.io, Appvision.com, Analytics.com, Logotype, Google.com, Microsoft.com, Amazon.com*
+
+*The promocode for all services is* ***itpromocode***
 
 # Features
 
