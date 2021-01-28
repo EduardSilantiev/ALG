@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ALG.Web.Host</name>
+    </assembly>
+    <members>
+        <member name="T:ALG.Web.Host.Controllers.ServicesController">
+            <response code="401">Returned when the user is not authenticated</response>
+        </member>
+        <member name="M:ALG.Web.Host.Controllers.ServicesController.GetServiceListAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            Action to obtaine a list of services with its paging information
+            </summary>
+            <param name="filter">A string to filter services by name. No filtering if 'filter' is not provided</param>
+            <param name="currentPage">Current page for paging implementation. currentPage = 1 by default</param>
+            <param name="pageSize">Page size for paging implementation. pageSize = default value from appsettings;
+            if pageSize = -1,  pageSize = the size of a whole collection 
+            </param>
+            <returns>Returns the paginated list of services</returns>
+            <response code="200">Returned if the list is obtained</response>
+            <response code="422">Returned when the model validation failed</response>
+        </member>
+        <member name="M:ALG.Web.Host.Controllers.ServicesController.ActivateBonusAsync(ALG.Application.Services.Dto.ActivateBonusDto)">
+            <summary>
+            Action to activate a bonus for a service
+            </summary>
+            <param name="activateBonusDto">Model with a bonus activation data</param>
+            <returns>No content</returns>
+            <response code="204">Returned if the the bonus is activated</response>
+            <response code="400">Returned if a service not found or a promocode is invalid for the service</response>
+            <response code="409">Returned if the the bonus is already activated</response>
+            <response code="422">Returned when the model validation failed</response>
+        </member>
+        <member name="M:ALG.Web.Host.Controllers.UsersController.LoginAsync(ALG.Application.Users.Dto.CredentialsDto)">
+            <summary>
+            Action to Login into the system
+            </summary>
+            <param name="credentialsDto">Model with user credentials</param>
+            <returns>Returns the authenticated User</returns>
+            <response code="200">Returned if the user was authenticated</response>
+            <response code="400">Returned if the user authentication failed (invalid Email or Password)</response>
+            <response code="422">Returned when the model validation failed</response>
+        </member>
+    </members>
+</doc>
